@@ -1,4 +1,5 @@
-  local gui = Instance.new("ScreenGui")
+If place =   then
+local gui = Instance.new("ScreenGui")
   gui.ResetOnSpawn = false
   gui.Parent = game.CoreGui
   
