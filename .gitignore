@@ -42,23 +42,3 @@ local gui = Instance.new("ScreenGui")
       game:GetService("RunService").Heartbeat:Wait(0.000001)
     end
   end
-  
-  button.MouseButton1Click:Connect(toggle)
-  
-  -- Adicionar keybind "E" para ativar o botão
-  local UserInputService = game:GetService("UserInputService")
-  local eKeyPressed = false
-  
-  UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
-    if input.KeyCode == Enum.KeyCode.E and not gameProcessedEvent then
-      eKeyPressed = true
-      toggle()
-    end
-  end)
-  
-  UserInputService.InputEnded:Connect(function(input, gameProcessedEvent)
-    if input.KeyCode == Enum.KeyCode.E then
-      eKeyPressed = false
-    end
-  end)
-end
